@@ -22,7 +22,7 @@
         background-color: $primary;
         color: on($primary);
         margin: 0 0 $modal-radius + $space-size 0;
-        border-radius: 0 $modal-radius + $space-size $modal-radius + $space-size 0;
+        border-radius: 0px;
       }
 
       > scrolledwindow > viewport {
@@ -43,7 +43,7 @@
           }
 
           > row.activatable {
-            border-radius: $modal-radius;
+            border-radius: 0px;
 
             &, image.sidebar-icon, label.sidebar-label, button.sidebar-button {
               @if $topbar =='dark' and $variant =='light' {
@@ -140,7 +140,7 @@
     .nautilus-grid-view {
       &, .view {
         background-color: $base;
-        border-radius: $window-radius - $space-size;
+        border-radius: 0px;
       }
 
       @if $variant =='light' and $topbar =='dark' {
@@ -152,7 +152,7 @@
     .nautilus-network-view {
       &, columnview.view {
         background-color: $base;
-        border-radius: $window-radius - $space-size;
+        border-radius: 0px;
       }
 
       @if $variant =='light' and $topbar =='dark' {
@@ -161,7 +161,7 @@
     }
 
     placesview {
-      border-radius: $window-radius - $space-size;
+      border-radius: 0px;
       margin: 0 $space-size $space-size 0;
       background-color: $base;
 
@@ -175,7 +175,7 @@
     }
 
     .toolbar {
-      border-radius: $window-radius - $space-size;
+      border-radius: 0px;
 
       @if $variant =='light' and $topbar =='dark' {
         margin: 0 $space-size $space-size / 2;
@@ -183,7 +183,7 @@
     }
 
     banner > revealer > widget {
-      border-radius: $window-radius - $space-size;
+      border-radius: 0px;
 
       @if $variant =='light' and $topbar =='dark' {
         margin: 0 $space-size $space-size;
@@ -196,7 +196,7 @@
       statuspage {
         color: $text;
         background-color: $base;
-        border-radius: $window-radius - $space-size;
+        border-radius: 0px;
         margin: 0 $space-size $space-size 0;
       }
     }
@@ -222,13 +222,13 @@
     margin: $space-size / 2;
 
     > revealer > box {
-      border-radius: $corner-radius + $space-size;
+      border-radius: 0px;
     }
   }
 
   label.search-information {
     margin: $space-size / 2;
-    border-radius: $corner-radius;
+    border-radius: 0px;
   }
 
   #NautilusPathBar {
@@ -247,7 +247,7 @@
   padding: 0;
   margin: $space-size;
   border-style: none;
-  border-radius: $corner-radius;
+  border-radius: 0px;
   background-color: $primary;
   color: on($primary);
   box-shadow: $shadow-z3;
@@ -263,7 +263,7 @@
 .nautilus-grid-view {
   child.activatable {
     padding: 0;
-    border-radius: $corner-radius * 2;
+    border-radius: 0px;
 
     #NautilusViewCell {
       padding: $space-size;
@@ -294,7 +294,7 @@
     > row.activatable {
       padding: 0;
       margin: 0;
-      border-radius: $corner-radius;
+      border-radius: 0px;
 
       > cell {
         padding: 0;
@@ -330,12 +330,12 @@
 }
 
 #NautilusPathBar {
-  border-radius: $circular-radius;
+  border-radius: 0px;
   margin: 0;
 
   #NautilusPathButton {
     margin: 0 $space-size / 2;
-    border-radius: $circular-radius;
+    border-radius: 0px;
 
     &.current-dir {
       &:hover, &:active {
@@ -353,13 +353,13 @@
     margin: 0;
 
     > button {
-      border-radius: $circular-radius;
+      border-radius: 0px;
     }
   }
 }
 
 #NautilusQueryEditorTag {
-  border-radius: $circular-radius;
+  border-radius: 0px;
 
   > button {
     margin: $space-size / 2;
@@ -376,7 +376,7 @@ window.dialog {
   > box > stack > box > box {
     > notebook.frame {
       border-width: 0 0 0 1px;
-      border-radius: 0;
+      border-radius: 0px;
     }
   }
 }
@@ -387,7 +387,7 @@ preferencesgroup button.accent-button {
   min-height: 24px;
   min-width: 24px;
   padding: $space-size / 2;
-  border-radius: $circular-radius;
+  border-radius: 0px;
   background: var(--accent-bg-color);
   outline: none;
   background-clip: content-box;
@@ -468,7 +468,7 @@ preferencesgroup button.accent-button {
 }
 
 .small .card {
-  border-radius: 0;
+  border-radius: 0px;
   box-shadow: none;
 
   &.forecast-card {
@@ -494,7 +494,7 @@ leaflet {
   }
 
   button.clear-button.image-button {
-    border-radius: $corner-radius;
+    border-radius: 0px;
   }
 }
 
@@ -551,7 +551,7 @@ popover.events {
 
   list {
     background-color: $base;
-    border-radius: $corner-radius;
+    border-radius: 0px;
   }
 
   scrolledwindow {
@@ -559,7 +559,7 @@ popover.events {
   }
 
   button {
-    border-radius: $corner-radius;
+    border-radius: 0px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-style: solid none none;
@@ -578,24 +578,24 @@ event {
 
   &.timed,
   &:not(.slanted):not(.slanted-start):not(.slanted-end) {
-    border-radius: $corner-radius;
+    border-radius: 0px;
   }
 
   &.timed widget.edge {
-    border-radius: $corner-radius / 2;
+    border-radius: 0px;
     min-width: 5px;
   }
 
   &.slanted-start,
   &.slanted-end:dir(rtl) {
     padding-left: $space-size * 2 + 4px;
-    border-radius: 0 $corner-radius / 2 $corner-radius / 2 0;
+    border-radius: 0px;
   }
 
   &.slanted-end,
   &.slanted-start:dir(rtl) {
     padding-right: $space-size * 2 + 4px;
-    border-radius: $corner-radius / 2 0 0 $corner-radius / 2;
+    border-radius: 0px;
   }
 
   &:not(.timed).color-dark {
@@ -626,7 +626,7 @@ popover.event-popover > contents {
   background-color: transparent;
 
   > list {
-    border-radius: 4px;
+    border-radius: 0px;
   }
 }
 
@@ -634,7 +634,7 @@ popover.event-popover > contents {
 .sources-button {
   margin-top: 0;
   margin-bottom: 0;
-  border-radius: 0;
+  border-radius: 0px;
   border-top-style: none;
   border-bottom-style: none;
 
@@ -684,7 +684,7 @@ datechooser {
   .current-week {
     background-color: $fill;
     color: $text;
-    border-radius: $corner-radius;
+    border-radius: 0px;
   }
 
   // day names and week numbers
@@ -706,7 +706,7 @@ datechooser {
 
     dot {
       background-color: $text;
-      border-radius: 50%;
+      border-radius: 0px;
       min-height: $space-size / 2;
       min-width: $space-size / 2;
     }
@@ -850,7 +850,7 @@ monthcell {
     label.day-label.numeric {
       color: on($primary);
       background-color: $primary;
-      border-radius: $circular-radius;
+      border-radius: 0px;
       padding: 0;
       min-height: 24px;
       min-width: 24px;
@@ -876,7 +876,7 @@ monthcell {
 
   button {
     padding: 0 $space-size;
-    border-radius: 0;
+    border-radius: 0px;
     border-bottom: none;
     border-right: none;
   }
@@ -890,7 +890,7 @@ monthpopover > box {
 }
 
 .notes-section box > textview {
-  border-radius: $corner-radius;
+  border-radius: 0px;
   padding: $space-size;
 
   > text {
@@ -927,7 +927,7 @@ menubutton.sources-button {
   margin: 0;
 
   > button {
-    border-radius: 0 0 $window-radius $window-radius;
+    border-radius: 0px;
     margin: 0;
   }
 }
@@ -993,7 +993,7 @@ flowboxchild {
 .category-tile.card {
   padding: $space-size * 3.5;
   border: none;
-  border-radius: $corner-radius;
+  border-radius: 0px;
   min-width: 140px;
   font-weight: 900;
   font-size: larger;
@@ -1009,18 +1009,18 @@ flowboxchild {
 
 app-context-bar {
   > box:not(:first-child) > button.flat {
-    border-radius: 0;
+    border-radius: 0px;
 
     &:last-child {
-      border-radius: 0 $corner-radius $corner-radius 0;
+      border-radius: 0px;
     }
   }
 
   > box:first-child > button.flat {
-    border-radius: 0;
+    border-radius: 0px;
 
     &:first-child {
-      border-radius: $corner-radius 0 0 $corner-radius;
+      border-radius: 0px;
     }
   }
 
@@ -1072,7 +1072,7 @@ carousel.card {
 
 screenshot-carousel box.frame.view {
   border-width: 1px 0;
-  border-radius: 0;
+  border-radius: 0px;
 }
 
 
@@ -1197,7 +1197,7 @@ window.org-gnome-Builder {
 
     splitbutton {
       button {
-        border-radius: $corner-radius;
+        border-radius: 0px;
       }
 
       notification button {
@@ -1209,13 +1209,13 @@ window.org-gnome-Builder {
     }
 
     menubutton > button {
-      border-radius: $corner-radius;
+      border-radius: 0px;
       padding: $space-size $space-size * 1.5;
     }
 
     paneltogglebutton {
       button {
-        border-radius: $corner-radius;
+        border-radius: 0px;
       }
     }
   }
@@ -1260,7 +1260,7 @@ panelframeswitcher {
           min-height: $small-size;
           min-width: $small-size;
           padding: $space-size / 2;
-          border-radius: $corner-radius;
+          border-radius: 0px;
         }
       }
 
@@ -1277,7 +1277,7 @@ panelstatusbar {
 
   > menubutton > button,
   > paneltogglebutton button.image-button {
-    border-radius: 0;
+    border-radius: 0px;
     @extend %button-flat-simple;
   }
 }
@@ -1297,7 +1297,7 @@ panelstatusbar {
     }
 
     > stylevariantpreview > .wallpaper {
-      border-radius: $corner-radius;
+      border-radius: 0px;
       outline-color: transparent;
       outline-width: 3px;
       outline-offset: $space-size / 2;
@@ -1327,11 +1327,11 @@ window.dialog {
   > .dialog-vbox > box > scrolledwindow > viewport > widget {
     > list.boxed-list {
       border: none;
-      border-radius: 0;
+      border-radius: 0px;
 
       > row {
         &:first-child, &:last-child {
-          border-radius: 0;
+          border-radius: 0px;
         }
       }
     }

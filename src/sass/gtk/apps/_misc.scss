@@ -16,7 +16,7 @@ overlay > revealer {
 .terminix-session-sidebar, // for backward compatibility
 .tilix-session-sidebar { background-image: image($surface); }
 
-.terminal-titlebar button { border-radius: 0; }
+.terminal-titlebar button { border-radius: 0px; }
 
 button.image-button.session-new-button { min-width: $medium-size - 4px; }
 
@@ -46,7 +46,7 @@ button.flat.tilix-small-button {
  * Ubitquity *
  *************/
 #live_installer .menubar progressbar trough {
-  border-radius: 4px; // Adjust to hard-coded progress border-radius
+  border-radius: 0px; // Adjust to hard-coded progress border-radius
   background-color: $titlebar-track-disabled;
 }
 
@@ -60,7 +60,7 @@ window.background > box.vertical > scrolledwindow > widget toolbar {
   separator,
   button { margin: 2px; }
 
-  button { border-radius: $corner-radius; }
+  button { border-radius: 0px; }
 }
 
 
@@ -117,7 +117,7 @@ window.background.chromium {
   menu {
     border-color: if($variant == 'light', darken($background, 20%), lighten($background, 16%));
 
-    menuitem { border-radius: 0; }
+    menuitem { border-radius: 0px; }
   }
 }
 
@@ -151,7 +151,7 @@ tooltip.background.chromium { background-color: rgba($tooltip, 1); }
     > entry,
     > button > button {
       border: 1px solid $solid-border;
-      border-radius: $corner-radius;
+      border-radius: 0px;
       box-shadow: none;
 
       &:disabled { border-color: $track-disabled; }
@@ -249,7 +249,7 @@ window.background:not(.csd) {
       min-height: 24px;
       min-width: 16px;
       padding: 4px 8px;
-      // border-radius: $corner-radius;
+      // border-radius: 0px;
     }
 
     spinbutton button { border-width: 4px; }
@@ -262,7 +262,7 @@ window.background:not(.csd) {
       min-height: 24px;
       min-width: 24px;
       padding: 4px;
-      // border-radius: $corner-radius;
+      // border-radius: 0px;
     }
   }
 }
@@ -341,7 +341,7 @@ window.background.csd {
       > box.vertical > stack > scrolledwindow > viewport.frame { // Browse left side
         > list {
           border: none;
-          border-radius: 0;
+          border-radius: 0px;
 
           > row.activatable {
             @extend %sidebar_row;

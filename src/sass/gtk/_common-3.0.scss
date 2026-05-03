@@ -51,7 +51,7 @@
 }
 
 %linked {
-  border-radius: 0;
+  border-radius: 0px;
 
   &:first-child {
     border-top-left-radius: $corner-radius;
@@ -64,12 +64,12 @@
   }
 
   &:only-child {
-    border-radius: $corner-radius;
+    border-radius: 0px;
   }
 }
 
 %linked-vertical {
-  border-radius: 0;
+  border-radius: 0px;
 
   &:first-child {
     border-top-left-radius: $corner-radius;
@@ -82,7 +82,7 @@
   }
 
   &:only-child {
-    border-radius: $corner-radius;
+    border-radius: 0px;
   }
 }
 
@@ -94,11 +94,11 @@
   color: $text;
 
   &.csd { // Set csd windows botttom border radius
-    border-radius: 0 0 $window-radius $window-radius;
+    border-radius: 0px;
   }
 
   &.tiled &.maximized, &.solid-csd { // No radius when windows maximized
-    border-radius: 0;
+    border-radius: 0px;
   }
 }
 
@@ -137,7 +137,7 @@
 
   &:disabled { color: $text-disabled; }
 
-  // &:hover, &:selected { border-radius: $corner-radius; }
+  // &:hover, &:selected { border-radius: 0px; }
 
   &:selected {
     @extend %selected_items_primary;
@@ -149,7 +149,7 @@
 }
 
 widget.view {
-  // border-radius: $corner-radius;
+  // border-radius: 0px;
 
   &:selected {
     @extend %selected_items_primary;
@@ -157,7 +157,7 @@ widget.view {
 }
 
 window.background.csd > stack.view {
-  border-radius: 0 0 $window-radius $window-radius;
+  border-radius: 0px;
 }
 
 textview {
@@ -175,7 +175,7 @@ textview {
 }
 
 iconview {
-  &:hover, &:selected { border-radius: $corner-radius; }
+  &:hover, &:selected { border-radius: 0px; }
 }
 
 .rubberband,
@@ -189,7 +189,7 @@ flowbox {
 
   flowboxchild {
     padding: 4px;
-    border-radius: $corner-radius;
+    border-radius: 0px;
 
     &:selected { @extend %selected_items_color; }
   }
@@ -221,7 +221,7 @@ label {
   }
 
   &.osd {
-    border-radius: $corner-radius;
+    border-radius: 0px;
     background-color: $tooltip;
     color: on($tooltip);
   }
@@ -280,7 +280,7 @@ entry {
   %entry_basic, & {
     min-height: $medium-size;
     padding: 0 8px;
-    border-radius: $corner-radius;
+    border-radius: 0px;
     caret-color: currentColor; // this shouldn't be needed.
 
     @include entry(normal);
@@ -294,7 +294,7 @@ entry {
     &.flat {
       min-height: 0;
       padding: 2px;
-      border-radius: 0;
+      border-radius: 0px;
       background-color: transparent;
     }
 
@@ -303,7 +303,7 @@ entry {
 
       // min-height: $small-size;
       // min-width: $small-size;
-      // border-radius: $circular-radius;
+      // border-radius: 0px;
       color: $text-secondary;
 
       &:hover, &:active { color: $text; }
@@ -356,7 +356,7 @@ entry {
 }
 
 %entry_raised {
-  border-radius: $corner-radius;
+  border-radius: 0px;
 
   @include entry(raised-normal);
 
@@ -400,7 +400,7 @@ treeview entry {
 
 .entry-tag {
   margin: 2px;
-  border-radius: $circular-radius;
+  border-radius: 0px;
   box-shadow: none;
   background-color: $track-disabled;
   color: $text;
@@ -482,7 +482,7 @@ treeview entry {
 }
 
 %circular-button { // The Bloody Circul Button
-  border-radius: $circular-radius;
+  border-radius: 0px;
 
   label { padding: 0; }
 }
@@ -491,14 +491,14 @@ treeview entry {
   min-height: $small-size;
   min-width: $small-size;
   padding: 0;
-  border-radius: $circular-radius;
+  border-radius: 0px;
 }
 
 button {
   min-height: 24px;
   min-width: 16px;
   padding: ($medium-size - 24px) / 2 ($medium-size - 16px) / 2;
-  border-radius: $corner-radius;
+  border-radius: 0px;
   font-weight: 500;
   @extend %button-basic;
 
@@ -540,14 +540,14 @@ button {
 
     @extend %circular-button;
 
-    &.destructive-action { border-radius: $corner-radius; }
+    &.destructive-action { border-radius: 0px; }
   }
 
   // NOTE: Some image-only buttons use this as well
   &.text-button.image-button {
     min-width: 24px;
     padding: ($medium-size - 24px) / 2;
-    border-radius: $corner-radius;
+    border-radius: 0px;
 
     label {
       &:first-child { margin-left: 16px - ($medium-size - 24px) / 2; }
@@ -579,9 +579,9 @@ button {
   .linked:not(.vertical) > &.flat,
   .linked.vertical > &.flat {
     &:not(:only-child) { // specificity bump
-      border-radius: $corner-radius;
+      border-radius: 0px;
 
-      &.image-button:not(.text-button) { border-radius: $circular-radius; }
+      &.image-button:not(.text-button) { border-radius: 0px; }
     }
 
     &:focus { box-shadow: inset 0 0 0 9999px $overlay-focus; }
@@ -716,7 +716,7 @@ modelbutton.flat,
 .menuitem.button.flat {
   min-height: $menuitem-size;
   padding: 0 8px;
-  border-radius: $corner-radius;
+  border-radius: 0px;
   color: $text;
 
   @extend %button-flat-simple;
@@ -777,7 +777,7 @@ spinbutton {
       // reset all the other props since the spinbutton node is styled here
       margin: 0;
       border-image: none;
-      border-radius: 0;
+      border-radius: 0px;
       box-shadow: none;
       background-color: transparent;
     }
@@ -824,7 +824,7 @@ spinbutton {
       // @extend %entry_raised;
       margin: 0;
       border-image: none;
-      border-radius: 0;
+      border-radius: 0px;
       box-shadow: none;
       background-color: transparent;
 
@@ -859,7 +859,7 @@ spinbutton {
   treeview &:not(.vertical) {
     min-height: 0;
     border-style: none;
-    border-radius: 0;
+    border-radius: 0px;
 
     entry {
       min-height: 0;
@@ -900,7 +900,7 @@ combobox {
   }
 
   > .linked:not(.vertical) > entry:not(:only-child) {
-    border-radius: $corner-radius;
+    border-radius: 0px;
 
     &:first-child {
       margin-right: -$medium-size;
@@ -921,7 +921,7 @@ combobox {
     min-width: 16px;
     margin: ($medium-size - $small-size) / 2;
     padding: ($small-size - 16px) / 2;
-    border-radius: $corner-radius;
+    border-radius: 0px;
   }
 }
 
@@ -954,7 +954,7 @@ combobox {
 }
 
 button.combo:only-child {
-  border-radius: $corner-radius;
+  border-radius: 0px;
   font-weight: normal;
 
   @include entry(normal);
@@ -986,7 +986,7 @@ toolbar {
   @at-root %toolbar_osd, &.osd {
     transition: $transition-shadow;
     padding: $space-size;
-    border-radius: $corner-radius;
+    border-radius: 0px;
     box-shadow: $shadow-z4, inset 0 1px highlight($surface);
     background-color: $surface;
 
@@ -995,7 +995,7 @@ toolbar {
     &.left,
     &.right,
     &.top,
-    &.bottom { border-radius: 0; } // positional classes for `attached` osd toolbars
+    &.bottom { border-radius: 0px; } // positional classes for `attached` osd toolbars
 
     &.bottom {
       box-shadow: none;
@@ -1068,7 +1068,7 @@ searchbar > revealer > box {
   color: $titlebar-text-secondary;
 
   .linked:not(.vertical) > & {
-    border-radius: $corner-radius;
+    border-radius: 0px;
   }
 
   &:focus, &:hover, &:active, &:checked { color: $titlebar-text; }
@@ -1121,9 +1121,9 @@ searchbar > revealer > box {
   color: $titlebar-text;
 
   @if $topbar == 'dark' and $variant == 'light' and $rimless == 'false' {
-    border-radius: $window-radius - 1px $window-radius - 1px 0 0;
+    border-radius: 0px;
   } @else {
-    border-radius: $window-radius $window-radius 0 0;
+    border-radius: 0px;
   }
 
   @if $rimless == 'true' {
@@ -1171,7 +1171,7 @@ searchbar > revealer > box {
   entry { @extend %titlebar-entry; }
 
   .linked:not(.vertical) > entry {
-    border-radius: $corner-radius;
+    border-radius: 0px;
     margin-left: $space-size / 2;
     margin-right: $space-size / 2;
   }
@@ -1183,7 +1183,7 @@ searchbar > revealer > box {
     }
   }
 
-  // button.toggle { border-radius: $corner-radius; }
+  // button.toggle { border-radius: 0px; }
 
   stackswitcher { // reset
     @if $rimless == 'false' {
@@ -1280,7 +1280,7 @@ searchbar > revealer > box {
   .tiled-left &,
   .maximized &,
   .fullscreen & {
-    border-radius: 0;
+    border-radius: 0px;
     box-shadow: none;
   }
 
@@ -1290,12 +1290,12 @@ searchbar > revealer > box {
 
     @if $rimless == 'true' {
       box-shadow: inset 0 1px highlight($titlebar);
-      border-radius: $window-radius $window-radius 0 0;
+      border-radius: 0px;
     } @else {
       @if $topbar == 'dark' and $variant == 'light' {
-        border-radius: $window-radius - 1px  $window-radius - 1px 0 0;
+        border-radius: 0px;
       } @else {
-        border-radius: $window-radius $window-radius 0 0;
+        border-radius: 0px;
       }
     }
 
@@ -1303,7 +1303,7 @@ searchbar > revealer > box {
     .maximized &,
     .fullscreen & {
       box-shadow: none;
-      border-radius: 0;
+      border-radius: 0px;
     }
 
     button.titlebutton {
@@ -1319,7 +1319,7 @@ searchbar > revealer > box {
 
   .solid-csd & {
     &:dir(rtl), &:dir(ltr) { // specificity bump
-      border-radius: 0;
+      border-radius: 0px;
       box-shadow: none; // just remove the highlight
     }
   }
@@ -1349,7 +1349,7 @@ headerbar {
   }
 
   button, button.image-button {
-    border-radius: $corner-radius;
+    border-radius: 0px;
   }
 
   button:not(.suggested-action):not(.destructive-action) {
@@ -1382,7 +1382,7 @@ headerbar {
   &.windowhandle {
     viewswitcher {
       button:not(.titlebutton):not(.suggested-action):not(.destructive-action) {
-        border-radius: if($topbar == 'dark' and $theme == 'default' and $variant == 'light', $corner-radius, 0 0 $window-radius $window-radius);
+        border-radius: 0px;
         margin: if($topbar == 'dark' and $theme == 'default' and $variant == 'light', 2px 0, 0);
         min-width: 120px;
         padding: 0;
@@ -1421,7 +1421,7 @@ headerbar {
         > box.horizontal > button.radio {
           margin: 0;
           padding: 0;
-          border-radius: 0;
+          border-radius: 0px;
         }
       }
     }
@@ -1442,7 +1442,7 @@ headerbar {
                                 $primary 0%,
                                 transparent 0%)
                                 0 0 0 / 0 0 0px;
-  border-radius: $corner-radius;
+  border-radius: 0px;
 
   &:checked {
     border-image: radial-gradient(circle closest-corner at center calc(100% - 1px),
@@ -1497,7 +1497,7 @@ treeview.view {
 
   rubberband { @extend rubberband; } // to avoid borders being overridden by the previously set props
 
-  &:hover, &:selected { border-radius: 0; }
+  &:hover, &:selected { border-radius: 0px; }
 
   &.separator {
     min-height: $space-size;
@@ -1535,7 +1535,7 @@ treeview.view {
     box-shadow: none;
     background-color: $primary;
     background-image: none;
-    border-radius: $circular-radius;
+    border-radius: 0px;
     color: on($primary);
 
     &:selected:hover { box-shadow: none; }
@@ -1546,7 +1546,7 @@ treeview.view {
     box-shadow: none;
     background-color: $track-disabled;
     background-image: none;
-    border-radius: $circular-radius;
+    border-radius: 0px;
     padding: 0;
     margin: 0;
 
@@ -1558,7 +1558,7 @@ treeview.view {
       @extend %row_activatable;
       padding: 2px $space-size;
       border: none;
-      border-radius: $corner-radius;
+      border-radius: 0px;
 
       &:not(:focus):not(:hover):not(:active) { color: $text-secondary; }
 
@@ -1572,7 +1572,7 @@ treeview.view {
     border-style: none solid solid;
     border-width: 1px;
     border-color: $divider;
-    border-radius: 0;
+    border-radius: 0px;
     box-shadow: none;
     background-color: $base;
     background-clip: border-box;
@@ -1605,7 +1605,7 @@ menubar,
     min-height: 20px;
     padding: 4px 8px;
     color: $titlebar-text-secondary;
-    border-radius: $corner-radius;
+    border-radius: 0px;
 
     &:hover { // Seems like it :hover even with keyboard focus
       transition: none;
@@ -1630,7 +1630,7 @@ menu,
   padding: $space-size;
   background-color: $surface;
   background-clip: border-box;
-  border-radius: $menu-radius;
+  border-radius: 0px;
 
   @if $rimless == 'true' {
     border: 1px solid $solid-border;
@@ -1649,7 +1649,7 @@ menu,
     color: $text;
     font: initial;
     text-shadow: none;
-    border-radius: $corner-radius;
+    border-radius: 0px;
 
     &:hover {
       transition: none;
@@ -1703,7 +1703,7 @@ menu,
     &.top {
       margin-top: 0;
       // border-bottom: 1px solid $divider;
-      border-radius: $corner-radius;
+      border-radius: 0px;
       -gtk-icon-source: -gtk-icontheme('pan-up-symbolic');
     }
 
@@ -1711,7 +1711,7 @@ menu,
       margin-top: 4px * 2;
       margin-bottom: -4px * 3;
       // border-top: 1px solid $divider;
-      border-radius: $corner-radius;
+      border-radius: 0px;
       -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
     }
 
@@ -1739,7 +1739,7 @@ popover.background {
   transition: $transition-shadow;
   padding: 0;
   background-color: $surface;
-  border-radius: $menu-radius;
+  border-radius: 0px;
 
   &, .csd & {
     @if $rimless == 'true' {
@@ -1776,17 +1776,17 @@ popover.background {
       > row {
         padding: $space-size $space-size * 2;
 
-        &:first-child { border-radius: $menu-radius $menu-radius 0 0; }
-        &:last-child { border-radius: 0 0 $menu-radius $menu-radius; }
+        &:first-child { border-radius: 0px; }
+        &:last-child { border-radius: 0px; }
       }
     }
   }
 
   .linked > button:not(.radio) {
-    border-radius: $corner-radius;
-    &:first-child { border-radius: $corner-radius; }
-    &:last-child { border-radius: $corner-radius; }
-    &:only-child { border-radius: $corner-radius; }
+    border-radius: 0px;
+    &:first-child { border-radius: 0px; }
+    &:last-child { border-radius: 0px; }
+    &:only-child { border-radius: 0px; }
   }
 
   &.menu button,
@@ -1796,7 +1796,7 @@ popover.background {
     min-height: 32px;
     min-width: 48px;
     padding: 0 8px;
-    border-radius: $corner-radius;
+    border-radius: 0px;
 
     // &:checked { color: $primary; }
   }
@@ -1822,7 +1822,7 @@ popover.background {
   background-clip: padding-box;
   color: $text-secondary;
   font-weight: 500;
-  border-radius: $modal-radius;
+  border-radius: 0px;
 
   &:hover {
     background-color: $fill;
@@ -1847,19 +1847,19 @@ notebook {
 
   &, &.frame {
     background-color: $base;
-    border-radius: $modal-radius + $space-size;
+    border-radius: 0px;
   }
 
   &.frame frame {
     > border {
       border: none;
-      border-radius: $modal-radius;
+      border-radius: 0px;
     }
 
     > list {
       // @extend %circular_list;
 
-      row.activatable { border-radius: $corner-radius; }
+      row.activatable { border-radius: 0px; }
     }
   }
 
@@ -1868,7 +1868,7 @@ notebook {
     background-color: $fill;
     padding: $space-size / 2;
     margin: $space-size / 2;
-    border-radius: $modal-radius + $space-size / 2;
+    border-radius: 0px;
     // background-clip: border-box;
 
     &.top > tabs > arrow {
@@ -1930,7 +1930,7 @@ notebook {
 
       min-height: 16px;
       min-width: 16px;
-      border-radius: $corner-radius;
+      border-radius: 0px;
     }
 
     tab {
@@ -2004,7 +2004,7 @@ notebook {
 
   > stack:not(:only-child) { // the :not(:only-child) is for "hidden" notebooks
     background-color: transparent;
-    border-radius: $corner-radius;
+    border-radius: 0px;
   }
 }
 
@@ -2036,7 +2036,7 @@ scrollbar {
     min-width: 8px;
     min-height: 8px;
     border: 4px solid transparent;
-    border-radius: $circular-radius;
+    border-radius: 0px;
     background-clip: padding-box;
     background-color: $text-disabled;
 
@@ -2079,7 +2079,7 @@ scrollbar {
         min-height: 4px;
         margin: 4px - 1px;
         border: 1px solid rgba($base, 0.3);
-        border-radius: $circular-radius;
+        border-radius: 0px;
         background-color: $text-disabled;
         background-clip: padding-box;
         -gtk-icon-source: none;
@@ -2115,7 +2115,7 @@ scrollbar {
     min-width: 16px;
     min-height: 16px;
     padding: 0;
-    border-radius: 0;
+    border-radius: 0px;
   }
 
   // button icons
@@ -2145,7 +2145,7 @@ switch {
   margin: $space-size 0;
   padding: 0;
   border: 2px solid $text-secondary;
-  border-radius: $circular-radius;
+  border-radius: 0px;
   background-color: transparent;
   background-clip: border-box;
   font-size: 0;
@@ -2168,7 +2168,7 @@ switch {
     min-width: 16px;
     min-height: 16px;
     margin: 2px;
-    border-radius: $circular-radius;
+    border-radius: 0px;
     outline: none;
     box-shadow: none;
     background-color: $text-secondary;
@@ -2315,7 +2315,7 @@ radio {
 menu menuitem check {
   min-height: 16px;
   min-width: 16px;
-  border-radius: $corner-radius;
+  border-radius: 0px;
   -gtk-icon-source: -gtk-recolor(url("assets/scalable/small-checkbox-unchecked-symbolic.svg"));
 
   &:checked { -gtk-icon-source: -gtk-recolor(url("assets/scalable/small-checkbox-checked-symbolic.svg")); }
@@ -2469,7 +2469,7 @@ scale {
 
   slider {
     transition: all $duration $ease-out;
-    border-radius: $circular-radius;
+    border-radius: 0px;
     color: $primary;
     background-color: $base;
     box-shadow: inset 0 0 0 2px $primary;
@@ -2543,7 +2543,7 @@ scale {
           min-height: 32px;
           min-width: 32px;
           margin: -15px;
-          border-radius: 50%;
+          border-radius: 0px;
           background-size: auto, 1000% 1000%;
           background-repeat: no-repeat;
           background-position: center center;
@@ -2647,12 +2647,12 @@ progressbar {
   font-size: smaller;
 
   trough {
-    border-radius: $corner-radius;
+    border-radius: 0px;
     background-color: $track-disabled;
   }
 
   progress {
-    border-radius: $corner-radius;
+    border-radius: 0px;
     background-color: $primary;
   }
 
@@ -2697,7 +2697,7 @@ levelbar {
   // imitate the entry style
   trough {
     // padding: 2px;
-    border-radius: $corner-radius;
+    border-radius: 0px;
     // box-shadow: $shadow-z1;
     // background-color: $base;
 
@@ -2740,7 +2740,7 @@ printdialog {
   margin: 0;
   padding: 0;
   border: 1px solid $divider;
-  border-radius: 0;
+  border-radius: 0px;
   box-shadow: none;
 }
 
@@ -2748,7 +2748,7 @@ frame > border,
 .frame {
   @extend %frame;
 
-  &.view { border-radius: $corner-radius; }
+  &.view { border-radius: 0px; }
 
   &.flat { border-style: none; }
 }
@@ -2768,14 +2768,14 @@ actionbar > revealer > box {
 
   .background.csd box.vertical > &,
   .background.csd box.vertical > revealer > & {
-    border-radius: 0 0 $window-radius $window-radius;
+    border-radius: 0px;
   }
 
   button:not(.suggested-action):not(.destructive-action) { @extend %button-flat; }
 
   .linked > button:not(.suggested-action):not(.destructive-action) { @extend %button-basic; }
 
-  // .linked:not(.vertical) > entry:not(:only-child) { border-radius: $corner-radius; }
+  // .linked:not(.vertical) > entry:not(:only-child) { border-radius: 0px; }
 }
 
 scrolledwindow {
@@ -2784,7 +2784,7 @@ scrolledwindow {
   }
 
   stack &.frame {
-    // border-radius: $corner-radius;
+    // border-radius: 0px;
 
     viewport.frame list { border: none; }
   }
@@ -2976,18 +2976,18 @@ calendar {
   &:selected {
     @extend %selected_items;
 
-    border-radius: $corner-radius;
+    border-radius: 0px;
   }
 
   &.header {
     border-style: none none solid;
     border-color: $divider;
-    border-radius: 0;
+    border-radius: 0px;
   }
 
   &.button {
     @extend %button-flat-simple;
-    border-radius: $corner-radius;
+    border-radius: 0px;
   }
 
   &.highlight {
@@ -3040,7 +3040,7 @@ messagedialog { // Message Dialog styling
       button {
         @extend %button-flat;
 
-        &, &:first-child, &:last-child { border-radius: $corner-radius; }
+        &, &:first-child, &:last-child { border-radius: 0px; }
 
         &:not(:last-child) { margin-right: $space-size; }
 
@@ -3057,7 +3057,7 @@ messagedialog { // Message Dialog styling
 filechooser {
   .csd & {
     background-color: $base;
-    border-radius: 0 0 $window-radius $window-radius;
+    border-radius: 0px;
   }
 
   .dialog-action-box { border-top: 1px solid $divider; }
@@ -3078,7 +3078,7 @@ filechooser {
 
     scrolledwindow {
       background-color: transparent;
-      border-radius: 0 0 $window-radius 0;
+      border-radius: 0px;
 
       list { background-color: transparent; }
     }
@@ -3164,7 +3164,7 @@ stacksidebar.sidebar {
   row {
     min-height: 32px;
     padding: 0 $space-size / 2;
-    border-radius: $corner-radius;
+    border-radius: 0px;
 
     &:selected {
       background-color: $primary;
@@ -3218,7 +3218,7 @@ placessidebar.sidebar {
     min-height: 32px;
     margin: 0; // Remove unwanted hard-coded vertical margins with -1px
     padding: 0;
-    border-radius: $corner-radius;
+    border-radius: 0px;
 
     // Using margins/padding directly in the SidebarRow
     // will make the animation of the new bookmark row jump
@@ -3434,11 +3434,11 @@ tooltip {
   }
 
   &.background.csd {
-    border-radius: $corner-radius;
+    border-radius: 0px;
   }
 
   // padding: 4px; /* not working */
-  border-radius: $corner-radius/2;
+  border-radius: 0px;
   box-shadow: none; // otherwise it gets inherited by windowframe.csd
 
   // FIXME: we need a border or tooltips vanish on black background.
@@ -3520,9 +3520,9 @@ colorswatch {
   }
 
   &#add-color-button {
-    border-radius: $corner-radius $corner-radius 0 0;
+    border-radius: 0px;
 
-    &:only-child { border-radius: $corner-radius; }
+    &:only-child { border-radius: 0px; }
 
     overlay {
       background-color: $fill;
@@ -3540,9 +3540,9 @@ colorswatch {
   }
 
   &#editor-color-sample {
-    border-radius: $menu-radius;
+    border-radius: 0px;
 
-    overlay { border-radius: $menu-radius; }
+    overlay { border-radius: 0px; }
 
     // overlay:hover { box-shadow: $shadow-z1; }
   }
@@ -3551,7 +3551,7 @@ colorswatch {
 // colorscale popup
 colorchooser .popover.osd {
   transition: $transition-shadow;
-  border-radius: $corner-radius;
+  border-radius: 0px;
   box-shadow: $shadow-z4, inset 0 1px highlight($surface);
   background-color: $surface;
 
@@ -3590,9 +3590,9 @@ decoration {
   box-shadow: $shadow-z16, 0 0 50px transparent;
 
   @if $rimless == 'true' {
-    border-radius: $window-radius;
+    border-radius: 0px;
   } @else {
-    border-radius: $window-radius + 2px;
+    border-radius: 0px;
     border: 2px solid $primary;
     background-clip: border-box;
   }
@@ -3622,7 +3622,7 @@ decoration {
   .tiled-top &,
   .tiled-right &,
   .tiled-bottom &,
-  .tiled-left & { border-radius: 0; }
+  .tiled-left & { border-radius: 0px; }
 
   .popup & { box-shadow: none; }
 
@@ -3635,36 +3635,36 @@ decoration {
     } @else {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 0 0 2px $primary;
       border: none;
-      border-radius: $window-radius $window-radius 0 0;
+      border-radius: 0px;
     }
   } // just doing borders, wm draws actual shadows
 
   .csd.popup & {
-    border-radius: $menu-radius;
+    border-radius: 0px;
 
     @if $rimless == 'true' {
       box-shadow: $shadow-z4;
     } @else {
-      border-radius: $menu-radius + 2px;
+      border-radius: 0px;
       border: 2px solid $primary;
       background-clip: border-box;
     }
   }
 
   tooltip.csd & {
-    border-radius: $menu-radius;
+    border-radius: 0px;
     box-shadow: none;
     border: none;
   }
 
   // messagedialog.csd & {
-  //   border-radius: $window-radius;
+  //   border-radius: 0px;
   // }
 
   .solid-csd & {
     margin: 0;
     padding: 2px;
-    border-radius: 0;
+    border-radius: 0px;
     box-shadow: none;
     background-color: $titlebar;
 
@@ -3736,7 +3736,7 @@ cursor-handle {
   padding-right: 8px;
 
   border: solid 1px $divider;
-  border-radius: $corner-radius + 1px;
+  border-radius: 0px;
   box-shadow: inset 0 -2px $divider;
   background-color: $surface;
   color: $text;
@@ -3749,7 +3749,7 @@ cursor-handle {
 
 stackswitcher {
   min-height: 0;
-  border-radius: $circular-radius;
+  border-radius: 0px;
 
   @if $rimless == 'true' {
     padding: 0;
@@ -3763,7 +3763,7 @@ stackswitcher {
 
   &.linked:not(.vertical) > button:not(.suggested-action):not(.destructive-action) {
     margin: 0 0;
-    border-radius: $circular-radius;
+    border-radius: 0px;
     background-color: transparent;
 
     @if $rimless == 'false' {
@@ -3820,7 +3820,7 @@ popover.emoji-picker {
   entry {
     border-bottom: 1px solid $divider;
     border-image: none;
-    border-radius: 0;
+    border-radius: 0px;
     box-shadow: none;
     background-color: transparent;
   }
@@ -3847,7 +3847,7 @@ popover.emoji-picker .emoji {
 
   widget {
     transition: $transition;
-    border-radius: $corner-radius;
+    border-radius: 0px;
 
     &:hover { background-color: $overlay-hover; }
   }

@@ -41,7 +41,7 @@
     min-height: 16px;
     min-width: 16px;
     padding: 0;
-    border-radius: 0;
+    border-radius: 0px;
   }
 
   .tasklist button {
@@ -67,7 +67,7 @@ wnck-pager {
 }
 
 XfdesktopIconView.view {
-  border-radius: $corner-radius;
+  border-radius: 0px;
   background-color: transparent;
   color: on(dark);
 
@@ -81,7 +81,7 @@ XfdesktopIconView.view {
   .rubberband {
     @extend rubberband;
 
-    border-radius: 0;
+    border-radius: 0px;
   }
 }
 
@@ -94,7 +94,7 @@ XfdesktopIconView.view {
 // Xfwm4's alt-tab dialog, aka "tabwin"
 #xfwm-tabwin {
   padding: 12px;
-  border-radius: $corner-radius;
+  border-radius: 0px;
 
   // Set the application icon- and preview-size to 64px
   -XfwmTabwinWidget-icon-size: 64px;

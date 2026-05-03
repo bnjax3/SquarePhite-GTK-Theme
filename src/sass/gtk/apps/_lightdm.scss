@@ -34,7 +34,7 @@
 #shutdown_dialog,
 #restart_dialog {
   margin: 8px;
-  border-radius: $corner-radius;
+  border-radius: 0px;
   box-shadow: $shadow-z4, inset 0 1px highlight($surface);
   background-color: $surface;
 }

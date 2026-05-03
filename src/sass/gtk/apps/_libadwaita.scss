@@ -3,7 +3,7 @@
 //
 
 avatar {
-  border-radius: $circular-radius;
+  border-radius: 0px;
   font-weight: bold;
 
   // The list of colors to generate avatars.
@@ -50,7 +50,7 @@ avatar {
 
 .card {
   @at-root %card, & {
-    border-radius: $corner-radius;
+    border-radius: 0px;
     box-shadow: none;
     border: 1px solid $border;
     background-clip: border-box;
@@ -91,7 +91,7 @@ preferencesgroup > box {
     outline-style: solid;
 
     &, > background-preview {
-      border-radius: 6px;
+      border-radius: 0px;
     }
 
     &:hover {
@@ -163,7 +163,7 @@ statuspage {
 toast {
   margin: $space-size * 2;
   margin-bottom: $space-size * 4;
-  border-radius: $circular-radius;
+  border-radius: 0px;
   border-spacing: $space-size;
   padding: $space-size;
   box-shadow: $shadow-z12, inset 0 1px highlight($osd);
@@ -216,13 +216,13 @@ viewswitcher {
   }
 
   &.narrow button.toggle {
-    border-radius: 0;
+    border-radius: 0px;
     margin: 0;
     border: none;
   }
 
   headerbar &.narrow button.toggle {
-    border-radius: if($topbar =='dark' and $theme =='default' and $variant =='light', $corner-radius, 0 0 $window-radius $window-radius);
+    border-radius: 0px;
     margin: if($topbar =='dark' and $theme =='default' and $variant =='light', 2px 0, 0);
     min-width: 120px;
     padding: 0;
@@ -323,7 +323,7 @@ indicatorbin {
   > indicator, > mask {
     min-width: $space-size;
     min-height: $space-size;
-    border-radius: $circular-radius;
+    border-radius: 0px;
   }
 
   > indicator {
@@ -367,7 +367,7 @@ panelthemeselector {
     min-width: 44px;
     padding: 1px;
     background-clip: content-box;
-    border-radius: $circular-radius;
+    border-radius: 0px;
     box-shadow: inset 0 0 0 1px $border;
 
     &.follow:checked,
@@ -426,7 +426,7 @@ popover themeswitcher {
     background: none;
     padding: 0;
     margin: 0;
-    border-radius: $circular-radius;
+    border-radius: 0px;
     color: on($primary);
     background-color: $primary;
 
@@ -453,7 +453,7 @@ popover themeswitcher {
     min-width: 44px;
     padding: 1px;
     background-clip: content-box;
-    border-radius: $circular-radius;
+    border-radius: 0px;
     box-shadow: inset 0 0 0 1px $border;
 
     &:checked {
@@ -486,7 +486,7 @@ floating-sheet {
   }
 
   > sheet {
-    border-radius: $window-radius;
+    border-radius: 0px;
     outline: none;
 
     @if $rimless =='true' {
@@ -543,7 +543,7 @@ dialog-host > dialog.osd:not(progressbar):not(button):not(menubutton):not(splitb
 
 toggle-group {
   background: $button;
-  border-radius: $corner-radius + $space-size / 2;
+  border-radius: 0px;
   padding: $space-size / 2;
   border-spacing: 0;
 
@@ -552,7 +552,7 @@ toggle-group {
   }
 
   > toggle {
-    border-radius: $corner-radius;
+    border-radius: 0px;
     font-weight: bold;
     min-width: $medium-size;
     min-height: $medium-size - $space-size;
@@ -612,13 +612,13 @@ toggle-group {
   .osd & {
     background: $osd;
     color: on($osd);
-    border-radius: $corner-radius + $space-size / 2;
+    border-radius: 0px;
     box-shadow: none;
     padding: $space-size / 2;
     margin: 0;
 
     > toggle {
-      border-radius: $corner-radius;
+      border-radius: 0px;
 
       &, &:hover, &:active, &.keyboard-activating {
         box-shadow: none;
@@ -673,10 +673,10 @@ toggle-group {
   }
 
   &.round {
-    border-radius: $circular-radius;
+    border-radius: 0px;
 
     toggle {
-      border-radius: $circular-radius;
+      border-radius: 0px;
 
       &.text-button,
       &.image-text-button {

@@ -318,7 +318,7 @@
     background: linear-gradient(to $_direction, gtkalpha($c, .75), transparent 8px);
 
     @if $style == 'round' {
-      border-radius: $_border_radius;
+      border-radius: 0px;
     }
 
     @if $style == 'compact' {

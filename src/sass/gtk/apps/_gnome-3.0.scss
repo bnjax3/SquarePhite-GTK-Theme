@@ -23,7 +23,7 @@
 
   &.background.csd {
     background-color: $titlebar;
-    border-radius: 0 0 $window-radius $window-radius;
+    border-radius: 0px;
 
     headerbar {
       padding-left: 12px;
@@ -58,7 +58,7 @@
             background-color: $primary;
             color: on($primary);
             margin: 0 $space-size * 2.5 $modal-radius + $space-size 0;
-            border-radius: 0 $modal-radius + $space-size $modal-radius + $space-size 0;
+            border-radius: 0px;
           }
 
           > list {
@@ -75,7 +75,7 @@
             }
 
             > row.activatable {
-              border-radius: $modal-radius;
+              border-radius: 0px;
 
               &, image.sidebar-icon, label.sidebar-label, button.sidebar-button {
                 @if $topbar =='dark' and $variant =='light' {
@@ -131,7 +131,7 @@
 
     .nautilus-list-view {
       background-color: transparent;
-      border-radius: $window-radius;
+      border-radius: 0px;
     }
 
     notebook {
@@ -173,7 +173,7 @@
 
       > stack {
         background-color: $base;
-        border-radius: $modal-radius + $space-size;
+        border-radius: 0px;
 
         @if $variant =='light' and $topbar =='dark' {
           margin: 0 $space-size $space-size;
@@ -195,7 +195,7 @@
 
         > actionbar {
           background-color: transparent;
-          border-radius: 0 0 $window-radius $window-radius;
+          border-radius: 0px;
 
           > revealer > box {
             background-color: transparent;
@@ -209,7 +209,7 @@
 
     // No border radius when window maximized
     &, placessidebar {
-      border-radius: 0;
+      border-radius: 0px;
     }
   }
 }
@@ -220,7 +220,7 @@
   padding: 0;
   margin: 6px;
   border-style: none;
-  border-radius: $corner-radius;
+  border-radius: 0px;
   background-color: $primary;
   color: on($primary);
 
@@ -233,7 +233,7 @@
 }
 
 // .nautilus-canvas-item {
-//   border-radius: $corner-radius;
+//   border-radius: 0px;
 // }
 
 .nautilus-canvas-item.dim-label,
@@ -267,7 +267,7 @@
 .path-bar-box {
   transition: background-color $duration $ease-out;
   margin: $space-size 0;
-  border-radius: $corner-radius;
+  border-radius: 0px;
 
   button {
     margin: 0;
@@ -317,12 +317,12 @@
 
     &.text-button {
       min-width: 0;
-      // border-radius: $circular_radius;
+      // border-radius: 0px;
     }
 
     &.text-button.image-button {
 
-      // border-radius: $circular_radius;
+      // border-radius: 0px;
       image:not(:only-child) {
         margin: 0;
       }
@@ -344,7 +344,7 @@
 // >= 42.0
 .windowhandle .linked.nautilus-path-bar {
   background-color: $titlebar-fill;
-  border-radius: $corner-radius;
+  border-radius: 0px;
   margin: $space-size 0;
 
   button:not(.suggested-action):not(.destructive-action) {
@@ -410,7 +410,7 @@
 
     .icon-item-background {
       padding: 4px;
-      border-radius: $space-size;
+      border-radius: 0px;
     }
 
     &:selected {
@@ -423,7 +423,7 @@
   }
 
   notebook :not(treeview).view {
-    border-radius: $space-size;
+    border-radius: 0px;
 
     selection,
     &:selected {
@@ -447,7 +447,7 @@ dialog.background > box.dialog-vbox.vertical > grid.horizontal {
     }
 
     > box > button {
-      border-radius: 0;
+      border-radius: 0px;
     }
   }
 }
@@ -571,7 +571,7 @@ window.org-gnome-gedit {
 
 .gedit-side-panel-paned statusbar {
   border-top: 1px solid $divider;
-  border-radius: 0 0 $window-radius $window-radius;
+  border-radius: 0px;
 }
 
 .gedit-search-slider {
@@ -580,10 +580,10 @@ window.org-gnome-gedit {
   background-color: $base;
   color: $text;
   box-shadow: $shadow-z4;
-  border-radius: 0 0 $window-radius $window-radius;
+  border-radius: 0px;
 
   .linked:not(.vertical) > entry {
-    border-radius: $corner-radius;
+    border-radius: 0px;
     @extend %entry_raised;
 
     .gedit-search-entry-occurrences-tag {
@@ -640,7 +640,7 @@ window.org-gnome-gedit {
     border: solid $space-size transparent;
 
     &, &:first-child, &:last-child {
-      border-radius: $circular-radius;
+      border-radius: 0px;
     }
 
     @extend %button-flat-simple;
@@ -674,7 +674,7 @@ frame.gedit-map-frame > border {
  **********/
 
 %circular_list {
-  border-radius: $corner-radius + 1px;
+  border-radius: 0px;
   box-shadow: none;
   border: 1px solid $divider;
 }
@@ -692,7 +692,7 @@ frame.gedit-map-frame > border {
   }
 
   &:only-child {
-    border-radius: $corner-radius;
+    border-radius: 0px;
   }
 
   &:focus {
@@ -701,7 +701,7 @@ frame.gedit-map-frame > border {
 }
 
 %sidebar_row {
-  border-radius: $corner-radius;
+  border-radius: 0px;
 
   &:selected {
     background-color: $primary;
@@ -769,7 +769,7 @@ leaflet > box > scrolledwindow > viewport.frame > list.navigation-sidebar {
   }
 
   row.tweak-startup {
-    border-radius: $corner-radius;
+    border-radius: 0px;
     background-color: transparent;
     background-image: none;
   }
@@ -843,7 +843,7 @@ window.background.csd {
   }
 
   > stack:not(.titlebar) > stack.background {
-    border-radius: 0 0 $window-radius $window-radius;
+    border-radius: 0px;
   }
 
   > leaflet,
@@ -911,7 +911,7 @@ window.background.csd {
     }
 
     > stack:not(.titlebar) > stack.background {
-      border-radius: 0;
+      border-radius: 0px;
     }
 
     > leaflet,
@@ -940,14 +940,14 @@ dialog.background.csd {
 
     // wifi setting
     > notebook > stack > box.horizontal > notebook > stack {
-      border-radius: 0 0 $window-radius $window-radius;
+      border-radius: 0px;
     }
   }
 
   &.maximized, &.tiled {
     > box.vertical.dialog-vbox {
       > notebook > stack > box.horizontal > notebook > stack {
-        border-radius: 0;
+        border-radius: 0px;
       }
     }
   }
@@ -1021,11 +1021,11 @@ hdyleaflet, leaflet, box.horizontal > stack.background {
 window#gnome-system-monitor.background.csd {
   > box.vertical > stack {
     background-color: $base;
-    border-radius: 0 0 $window-radius $window-radius;
+    border-radius: 0px;
 
     > box.vertical {
       > revealer > actionbar > revealer > box {
-        border-radius: 0 0 $window-radius $window-radius;
+        border-radius: 0px;
       }
     }
   }
@@ -1045,11 +1045,11 @@ stack {
   > grid.vertical {
     > scrolledwindow {
       border: none;
-      border-radius: 0 0 $window-radius $window-radius;
+      border-radius: 0px;
 
       > viewport.frame {
         list {
-          border-radius: 0 0 $window-radius $window-radius;
+          border-radius: 0px;
         }
       }
     }
@@ -1083,7 +1083,7 @@ tabbox {
   background-color: $fill;
   padding: $space-size / 2;
   margin: $space-size / 2;
-  border-radius: $modal-radius + $space-size / 2;
+  border-radius: 0px;
 
   > tab {
     @extend %tabs_tab;
@@ -1092,7 +1092,7 @@ tabbox {
     button {
       min-height: 24px;
       min-width: 24px;
-      border-radius: $circular-radius;
+      border-radius: 0px;
       border: none;
       padding: 0;
       @extend %button-flat-simple;
@@ -1120,7 +1120,7 @@ tabbox {
  ***************/
 window.background.csd {
   box.vertical > overlay > stack.background {
-    border-radius: 0 0 $window-radius $window-radius;
+    border-radius: 0px;
   }
 }
 
@@ -1153,7 +1153,7 @@ window.background.csd.unified {
 
 .sidebar-paned .inline-toolbar.horizontal.sidebar-toolbar {
   button.image-button {
-    border-radius: $circular-radius;
+    border-radius: 0px;
 
     &:not(:first-child), &:not(:last-child) {
       border-top-left-radius: $circular-radius;
@@ -1286,7 +1286,7 @@ layouttabbar {
 
   > box > button {
     margin: (40px - $medium-size) / 2 0;
-    // border-radius: 0;
+    // border-radius: 0px;
   }
 }
 
@@ -1333,7 +1333,7 @@ popover.popover-selector list {
   padding: 8px - 2px;
 
   row {
-    border-radius: $corner-radius;
+    border-radius: 0px;
 
     image {
       &:dir(ltr) {
@@ -1359,7 +1359,7 @@ popover.popover-selector list {
 
 omnibar {
   &.linked:not(.vertical) entry {
-    border-radius: $corner-radius;
+    border-radius: 0px;
   }
 
   &:not(:hover):not(:active) entry {
@@ -1418,7 +1418,7 @@ popover.messagepopover {
 
     padding: 8px 16px;
     border-top: 1px solid $divider;
-    border-radius: 0;
+    border-radius: 0px;
 
     &:first-child {
       border-bottom-left-radius: $corner-radius;
@@ -1524,7 +1524,7 @@ dockoverlayedge {
 
 pillbox {
   background-color: $background;
-  border-radius: $corner-radius;
+  border-radius: 0px;
 }
 
 // buildperspective row {
@@ -1619,7 +1619,7 @@ ideeditorutilities > dzldockpaned > box > stackswitcher {
   }
 
   button {
-    border-radius: 0;
+    border-radius: 0px;
     box-shadow: none;
     background-color: transparent;
 
@@ -1684,7 +1684,7 @@ GdMainIconView.content-view {
 
 .documents-counter {
   margin: 8px;
-  border-radius: $circular-radius;
+  border-radius: 0px;
   box-shadow: $shadow-z4;
   background-color: $primary;
   color: on($primary);
@@ -1813,7 +1813,7 @@ box.vertical > revealer > toolbar.search-bar {
 
   .content-view:not(:selected):not(:hover) {
     background-color: transparent;
-    // border-radius: 0 0 $window-radius $window-radius;
+    // border-radius: 0px;
   }
 
   viewport.frame {
@@ -1826,7 +1826,7 @@ box.vertical > revealer > toolbar.search-bar {
       }
 
       background-color: transparent;
-      // border-radius: 0 0 $window-radius $window-radius;
+      // border-radius: 0px;
     }
   }
 }
@@ -1837,7 +1837,7 @@ box.vertical > revealer > toolbar.search-bar {
  *******************/
 window.background.csd {
   evview.view.content-view {
-    border-radius: 0 0 $window-radius $window-radius;
+    border-radius: 0px;
 
     &:selected, &:selected:backdrop {
       @extend %selected_items_primary;
@@ -1852,13 +1852,13 @@ window.background.csd {
 .background.csd {
   > grid.horizontal > paned.horizontal {
     > scrolledwindow {
-      border-radius: 0 0 $window-radius $window-radius;
+      border-radius: 0px;
       background-color: $base;
     }
 
     > box.vertical {
       > scrolledwindow {
-        border-radius: 0 0 0 $window-radius;
+        border-radius: 0px;
         background-color: $background;
       }
     }
@@ -1872,17 +1872,17 @@ window.background.csd {
 terminal-window {
   decoration {
     @if $rimless =='true' {
-      border-radius: $window-radius $window-radius 0 0;
+      border-radius: 0px;
     }
 
     @else {
-      border-radius: $window-radius + 2px $window-radius + 2px 0 0;
+      border-radius: 0px;
     }
   }
 
   &.background.csd,
   &.background.csd.maximized {
-    border-radius: 0 0 0 0;
+    border-radius: 0px;
   }
 
   // Fixed gnome 3.32 issue: Unable to restore window size after maximization
@@ -1930,7 +1930,7 @@ window.background {
 // Tilix
 .tilix-background {
   &, vte-terminal {
-    border-radius: 0 0 $window-radius $window-radius;
+    border-radius: 0px;
   }
 }
 
@@ -2063,7 +2063,7 @@ list.categories {
 .transparent-bg + stack overlay > label {
   min-height: 24px;
   padding: 0 4px;
-  border-radius: $corner-radius;
+  border-radius: 0px;
   background-color: $scrim;
   color: on($scrim);
 }
@@ -2108,7 +2108,7 @@ window#GearyMainWindow.background.csd {
 
       > .geary-composer-embed {
         actionbar > revealer > box {
-          border-radius: 0;
+          border-radius: 0px;
         }
 
         headerbar {
@@ -2190,11 +2190,11 @@ preferencesgroup, .geary-accounts-editor-pane {
 
       treeview.view {
         border: 1px solid transparent;
-        border-radius: $corner-radius;
+        border-radius: 0px;
         padding: $space-size;
 
         &:selected, &:active {
-          border-radius: $corner-radius;
+          border-radius: 0px;
           background-color: $primary;
           color: on($primary);
         }
@@ -2223,13 +2223,13 @@ preferencesgroup, .geary-accounts-editor-pane {
       }
 
       .geary-attachment-pane {
-        border-radius: 0 0 8px 8px;
+        border-radius: 0px;
 
         actionbar.background {
           background-color: transparent;
 
           > revealer > box {
-            border-radius: 0 0 6px 6px;
+            border-radius: 0px;
           }
         }
       }
@@ -2308,11 +2308,11 @@ dialog.background.csd {
       > scrolledwindow.frame {
         > viewport.frame {
           list:first-child {
-            border-radius: 0 0 0 $window-radius;
+            border-radius: 0px;
           }
 
           list:last-child {
-            border-radius: 0 0 $window-radius 0;
+            border-radius: 0px;
           }
         }
       }
@@ -2321,7 +2321,7 @@ dialog.background.csd {
     > stack,
     > stack > stack {
       > scrolledwindow {
-        border-radius: 0 0 $window-radius $window-radius;
+        border-radius: 0px;
         background-color: $base;
 
         iconview.view:not(:hover):not(:selected):not(:active) {
@@ -2335,7 +2335,7 @@ dialog.background.csd {
     > stack {
       > scrolledwindow > viewport.frame {
         > list {
-          border-radius: 0 0 $window-radius $window-radius;
+          border-radius: 0px;
 
           row.activatable:not(:hover):not(:selected):not(:active) {
             background-color: transparent;
@@ -2344,23 +2344,23 @@ dialog.background.csd {
       }
 
       toolbar.toolbar {
-        border-radius: 0 0 $window-radius $window-radius;
+        border-radius: 0px;
       }
     }
 
     > notebook {
       > stack {
-        border-radius: 0 0 $window-radius $window-radius;
+        border-radius: 0px;
       }
     }
   }
 
   stack scrolledwindow {
     &.frame {
-      border-radius: $corner-radius;
+      border-radius: 0px;
 
       textview.view {
-        border-radius: $corner-radius;
+        border-radius: 0px;
 
         > text {
           background: none;
@@ -2370,7 +2370,7 @@ dialog.background.csd {
 
     viewport.frame {
       &.view {
-        border-radius: $corner-radius;
+        border-radius: 0px;
       }
     }
   }
@@ -2402,7 +2402,7 @@ window.background.csd.unified {
   &,
   > decoration,
   > decoration-overlay {
-    border-radius: $window-radius;
+    border-radius: 0px;
 
     @if $rimless =='false' {
       @if $topbar =='dark' and $variant =='light' {
@@ -2434,7 +2434,7 @@ window.background.csd.unified {
     &,
     > decoration,
     > decoration-overlay {
-      border-radius: 0;
+      border-radius: 0px;
     }
   }
 }
