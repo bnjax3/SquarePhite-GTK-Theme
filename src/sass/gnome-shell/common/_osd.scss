@@ -6,7 +6,7 @@
   border: none;
   box-shadow: 0 3px 8px 0 rgba(black, 0.25);
   margin: 5px 8px 11px;
-  border-radius: $menu_radius;
+  border-radius: 0px;
   padding: $base_padding * 2;
 }
 
@@ -20,7 +20,7 @@
   .level {
     height: 3px;
     min-width: 160px;
-    border-radius: 2px;
+    border-radius: 0px;
     background-color: rgba($inverse-indicator, 0.15);
     color: white;
 
@@ -38,7 +38,7 @@
 
   .level-bar {
     background-color: $inverse-indicator;
-    border-radius: 2px;
+    border-radius: 0px;
   }
 }
 

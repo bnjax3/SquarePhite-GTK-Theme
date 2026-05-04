@@ -54,7 +54,7 @@
     // its color when focusing.
     border-width: 2px;
     border-color: transparent;
-    border-radius: 32px;
+    border-radius: 0px;
     border-style: solid;
 
     &:focus {
@@ -67,14 +67,14 @@
 .message {
   padding: $base_padding;
   margin: $base_spacing / 2;
-  border-radius: $window_radius;
+  border-radius: 0px;
 
   @if $colorful == 'true' {
     @include theme_bubble($theme_purple_color);
   }
 
   .popup-menu & {
-    border-radius: $base_radius;
+    border-radius: 0px;
 
     @if $colorful == 'true' {
       @include theme_bubble($theme_purple_color);
@@ -180,7 +180,7 @@
       -st-icon-style: symbolic;
 
       &.message-themed-icon {
-        border-radius: $circular_radius; // is circular
+        border-radius: 0px; // is circular
         icon-size: $base_icon_size;
         min-width: $base_icon_size * 3;
         min-height: $base_icon_size * 3;
@@ -220,7 +220,7 @@
 .message-media-control {
   margin: 4px $base_padding;
   padding: $base_padding * 2;
-  border-radius: $circular_radius;
+  border-radius: 0px;
   border: none;
 
   @if $colorful == 'true' {
@@ -254,7 +254,7 @@
 .media-message {
   // album-art
   .message-icon {
-    border-radius: $base_radius !important;
+    border-radius: 0px;
 
     &.message-themed-icon {
       icon-size: $large_icon_size !important; // 32px

@@ -33,7 +33,7 @@ $default_key_bg_color: if($variant=='light', $base, lighten($base, 2%));
   font-weight: bold;
   min-height: $key_size;
   min-width: $key_size;
-  border-radius: $key_border_radius;
+  border-radius: 0px;
   border: none;
   color: $text-secondary;
   background-color: $default_key_bg_color;
@@ -89,7 +89,7 @@ $default_key_bg_color: if($variant=='light', $base, lighten($base, 2%));
 
 .keyboard-subkeys { //long press on a key popup
   color: inherit;
-  -arrow-border-radius: $menu_radius;
+  -arrow-border-radius: 0px;
   -arrow-background-color: $scrim;
   -arrow-border-width: 0;
   -arrow-border-color: transparent;

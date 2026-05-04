@@ -7,10 +7,10 @@
 
   @if $rimless == 'false' {
     border: 2px solid $primary;
-    border-radius: $modal_radius + $base_padding / 2 + 2px;
+    border-radius: 0px;
   } @else {
     border: none;
-    border-radius: $modal_radius + $base_padding / 2;
+    border-radius: 0px;
   }
 }
 
@@ -19,7 +19,7 @@
   padding: $base_padding;
   margin: 0;
   border: none !important;
-  border-radius: $base_radius;
+  border-radius: 0px;
   @extend %flat_button;
 
   &:first-child {
@@ -106,7 +106,7 @@
     color: $warning;
     background-color: transparentize($warning, 0.9);
     padding: $base_padding * 1.5;
-    border-radius: $base_radius;
+    border-radius: 0px;
     margin: $base_margin 0;
   }
 }
@@ -207,7 +207,7 @@
 
 .audio-selection-device {
   border: 1px solid $border;
-  border-radius: $base_radius;
+  border-radius: 0px;
   &:hover, &:focus { background-color: overlay($popover, hover); }
   &:active {
     background-color: $primary;

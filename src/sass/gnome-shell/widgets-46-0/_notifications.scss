@@ -8,13 +8,13 @@ $notification_banner_width: 34em;
   min-height: $notification_banner_height;
   width: $notification_banner_width;
   margin: 12px 8px 8px;
-  border-radius: $base_radius;
+  border-radius: 0px;
   color: $text-secondary;
   background-color: $popover;
   border: none;
   text-shadow: none;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
-  border-radius: $menu_radius;
+  border-radius: 0px;
 
   &:hover {
     color: $text;
@@ -70,25 +70,25 @@ $notification_banner_width: 34em;
   }
 
   &:first-child:ltr {
-    border-radius: 0 0 0 $menu_radius;
+    border-radius: 0px;
   }
 
   &:last-child:ltr {
-    border-radius: 0 0 $menu_radius;
+    border-radius: 0px;
     margin-right: 0 !important;
   }
 
   &:first-child:rtl {
-    border-radius: 0 0 $menu_radius;
+    border-radius: 0px;
   }
 
   &:last-child:rtl {
-    border-radius: 0 0 0 $menu_radius;
+    border-radius: 0px;
     margin-left: 0 !important;
   }
 
   &:first-child:last-child {
-    border-radius: 0 0 $menu_radius $menu_radius;
+    border-radius: 0px;
     margin-left: 0 !important;
     margin-right: 0 !important;
   }

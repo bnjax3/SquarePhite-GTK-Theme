@@ -3,7 +3,7 @@
 %popover_bubble {
   color: $text-secondary;
   background-color: $fill;
-  border-radius: $base_radius;
+  border-radius: 0px;
   border: none;
   box-shadow: none;
   text-shadow: none;
@@ -42,7 +42,7 @@
 }
 
 .datemenu-popover {
-  border-radius: $base_radius + $base_padding * 2 + $base_margin !important;
+  border-radius: 0px;
 }
 
 // Calendar menu side column
@@ -76,7 +76,7 @@
   margin: 0;
   text-shadow: none;
   color: $text-secondary;
-  border-radius: $base_radius;
+  border-radius: 0px;
   margin: $base_margin;
 
   &:ltr { margin-left: $base_margin; }
@@ -111,7 +111,7 @@
   padding: 0 $base_padding / 2 !important;
   margin: 0 !important;
   text-shadow: none;
-  border-radius: $menu_radius;
+  border-radius: 0px;
   color: $text-secondary;
 
   // month
@@ -140,7 +140,7 @@
     width: $item_size !important;
     height: $item_size !important;
     margin: 2px !important;
-    border-radius: $circular_radius;
+    border-radius: 0px;
     background-color: transparent;
     color: $text;
     box-shadow: none !important;
@@ -156,7 +156,7 @@
     height: $item_size + 2px !important;
     padding: 0 !important;
     margin: 2px !important;
-    border-radius: $circular_radius;
+    border-radius: 0px;
     color: $text-secondary !important;
     border: none;
     font-feature-settings: "tnum";
@@ -256,7 +256,7 @@
     text-align: center;
     margin: $base_margin;
     padding: $base_padding * 0.5 $base_padding;
-    border-radius: $base_radius;
+    border-radius: 0px;
     background-color: transparent;
     color: $text;
   }
@@ -266,7 +266,7 @@
     height: $item_size - 12px;
     margin: 6px $base_margin / 2 !important;
     padding: 0;
-    border-radius: $base_radius;
+    border-radius: 0px;
     background-color: $fill;
     color: $text-disabled;
     @extend %smaller;

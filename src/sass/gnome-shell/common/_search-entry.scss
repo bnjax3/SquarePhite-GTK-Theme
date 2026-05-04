@@ -5,7 +5,7 @@
   min-height: 20px;
   padding: $base_padding $base_padding * 2;
   transition-duration: 150ms;
-  border-radius: $base_radius;
+  border-radius: 0px;
 
   .search-entry-icon {
     color: $text-disabled;

@@ -41,7 +41,7 @@
     border: none;
     background-color: $osd;
     color: on($osd);
-    border-radius: $menu_radius;
+    border-radius: 0px;
 
     &.critical { background-color: lighten($osd, 8%); }
   }
@@ -56,7 +56,7 @@
   padding: 0 6px;
   color: on($primary);
   background-color: $primary;
-  border-radius: $circular_radius;
+  border-radius: 0px;
   margin-right: 12px;
 }
 

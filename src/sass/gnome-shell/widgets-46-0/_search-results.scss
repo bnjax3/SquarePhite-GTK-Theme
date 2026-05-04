@@ -1,7 +1,7 @@
 /* Search */
 
 %search-section-content-item {
-  border-radius: $base_radius;
+  border-radius: 0px;
   padding: $base_padding;
   transition-duration: 100ms;
   text-align: center;
@@ -45,7 +45,7 @@
 
 // content
 .search-section-content {  // This is the space between the provider icon and the results container
-  border-radius: $modal_radius * 1.5;
+  border-radius: 0px;
   padding: $base_padding * 2;
   margin:0 $base_margin * 3;
   border: none;

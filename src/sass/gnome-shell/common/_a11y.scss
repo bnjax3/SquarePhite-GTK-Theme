@@ -2,7 +2,7 @@
 .ripple-pointer-location {
   width: 48px;
   height: 48px;
-  border-radius: 24px; // radius equals the size of the box to give us the curve
+  border-radius: 0px; // radius equals the size of the box to give us the curve
   background-color: lighten(transparentize($primary, 0.7), 30%);
   box-shadow: 0 0 2px 2px lighten($primary, 20%);
 }

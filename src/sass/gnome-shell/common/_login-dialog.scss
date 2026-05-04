@@ -33,7 +33,7 @@
   .switch-user-button,
   .login-dialog-session-list-button {
     padding: 0;
-    border-radius: $circular_radius;
+    border-radius: 0px;
     width: 32px;
     height: 32px;
     border: none;
@@ -55,7 +55,7 @@
 
   StEntry {
     @extend %entry;
-    border-radius: $circular-radius;
+    border-radius: 0px;
   }
 
   .modal-dialog-button {
@@ -169,7 +169,7 @@
 }
 
 .login-dialog-user-list-item {
-  border-radius: $menu_radius;
+  border-radius: 0px;
   padding: $base_padding;
   color: $text-secondary;
 

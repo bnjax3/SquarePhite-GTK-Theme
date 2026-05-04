@@ -21,7 +21,7 @@ $app_icon_spacing: 6px;
   .page-indicator-icon {
     width: 10px;
     height: 10px;
-    border-radius: 10px; // the same as height&width
+    border-radius: 0px; // the same as height&width
     background-color: white;
   }
 }
@@ -42,7 +42,7 @@ $app_icon_spacing: 6px;
     background-gradient-start: rgba(255, 255, 255, 0.05);
     background-gradient-end: transparent;
     background-gradient-direction: horizontal;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 0px;
   }
 
   &.previous:ltr,
@@ -50,7 +50,7 @@ $app_icon_spacing: 6px;
     background-gradient-start: transparent;
     background-gradient-end: rgba(255, 255, 255, 0.05);
     background-gradient-direction: horizontal;
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 0px;
   }
 }
 
@@ -59,7 +59,7 @@ $app_icon_spacing: 6px;
     padding: 18px;
     width: 24px;
     height: 24px;
-    border-radius: $circular-radius;
+    border-radius: 0px;
     color: on($osd, secondary);
 
   &:insensitive {

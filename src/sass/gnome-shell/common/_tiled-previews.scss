@@ -9,13 +9,13 @@ $tile_corner_radius: $base_radius + 1px;
 }
 
 .tile-preview-left.on-primary {
-  border-radius: $tile_corner_radius 0 0 0;
+  border-radius: 0px;
 }
 
 .tile-preview-right.on-primary {
-  border-radius: 0 $tile_corner_radius 0 0;
+  border-radius: 0px;
 }
 
 .tile-preview-left.tile-preview-right.on-primary {
-  border-radius: $tile_corner_radius $tile_corner_radius 0 0;
+  border-radius: 0px;
 }

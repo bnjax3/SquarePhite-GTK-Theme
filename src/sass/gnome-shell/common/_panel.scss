@@ -35,7 +35,7 @@
     font-weight: bold;
     transition-duration: 150ms;
     text-shadow: none;
-    border-radius: $circular_radius;
+    border-radius: 0px;
 
     &.clock-display {
       -natural-hpadding: 0;
@@ -48,7 +48,7 @@
 
       .clock {
         transition-duration: 150ms;
-        border-radius: $circular_radius;
+        border-radius: 0px;
         padding-left: $base_padding * 2;
         padding-right: $base_padding * 2;
       }
@@ -247,7 +247,7 @@
       }
 
       .workspace-dot {
-        border-radius: $circular_radius;
+        border-radius: 0px;
         min-width: 8px;
         min-height: 8px;
         background-color: $panel-text;

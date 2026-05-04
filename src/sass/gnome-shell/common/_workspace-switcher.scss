@@ -10,7 +10,7 @@
 .workspace-switcher {
   background: transparent;
   border: none;
-  border-radius: 0;
+  border-radius: 0px;
   padding: 0;
   spacing: $base_spacing * 2;
 }
@@ -20,7 +20,7 @@
   height: 50px;
   background-size: 32px;
   background: $divider;
-  border-radius: $base_radius;
+  border-radius: 0px;
 }
 
 // active workspace in the switcher
@@ -31,6 +31,6 @@
   height: 52px;
   background-color: $primary;
   color: on($primary);
-  border-radius: $base_radius + 3px;
+  border-radius: 0px;
   border: none;
 }

@@ -18,7 +18,7 @@ $dash_spacing: $base_margin * 0.5;
   // background behind item container
   .dash-background {
     background-color: $dash_background_color;
-    border-radius: $dash_border_radius;
+    border-radius: 0px;
     padding-top: $dash_padding;
     padding-bottom: $dash_padding;
     padding-left: $dash_padding - $dash_spacing; // subtract the margins added to .overview-tile below
@@ -46,13 +46,13 @@ $dash_spacing: $base_margin * 0.5;
       background: none;
       box-shadow: none;
       border: none;
-      border-radius: 0;
+      border-radius: 0px;
       padding: 0;
       margin: 0 $dash_spacing;
       padding-bottom: $dash_edge_offset; // align with other items
 
       .overview-icon {
-        border-radius: $base_radius * 2;
+        border-radius: 0px;
         padding: $base_padding;
         spacing: $base_padding;
         text-align: center;
@@ -93,7 +93,7 @@ $dash_spacing: $base_margin * 0.5;
 .dash-label {
   color: rgba(white, 0.9);
   background-color: rgba(black, 0.75);
-  border-radius: $circular_radius;
+  border-radius: 0px;
   padding: $base_padding $base_padding * 2;
   box-shadow: none;
   border: none;

@@ -6,7 +6,7 @@
 %app-well-app {
   & .overview-icon {
     color: on($osd, secondary);
-    border-radius: $base_radius * 2.5;
+    border-radius: 0px;
     padding: 6px;
     border: none;
     transition-duration: 100ms;
@@ -33,11 +33,11 @@
 // App Folders
 .app-well-app.app-folder {
   background-color: on(black, divider);
-  border-radius: $base_radius * 2.5;
+  border-radius: 0px;
 
   .overview-icon {
     background-color: transparent;
-    border-radius: $base_radius * 2.5;
+    border-radius: 0px;
   }
 
   &:hover {
@@ -51,7 +51,7 @@
 
 // expanded folder
 .app-folder-dialog {
-  border-radius: $menu_radius * 3;
+  border-radius: 0px;
   padding: $base_padding * 2;
   box-shadow: none;
 
@@ -95,7 +95,7 @@
       padding: 0;
       width: 36px;
       height: 36px;
-      border-radius: $circular_radius;
+      border-radius: 0px;
 
       > StIcon { icon-size: $base_icon_size; }
 
@@ -127,7 +127,7 @@
 // Running app indicator (also shown in dash)
 .app-well-app-running-dot {
   width: $base_padding; height: 3px;
-  border-radius: 2px;
+  border-radius: 0px;
   background-color: on(black, track);
   margin-bottom: 0;
 
@@ -156,6 +156,6 @@
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); // FIXME: this should really have a highlight
   background-color: $osd;
   color: on($osd);
-  border-radius: $circular_radius;
+  border-radius: 0px;
   icon-size: 48px;
 }

@@ -95,7 +95,7 @@
 
 .hotplug-resident-mount {
   spacing: 8px;
-  border-radius: $base_radius;
+  border-radius: 0px;
   &:hover { background-color: $divider; }
   &:active { background-color: $track; }
 }
@@ -116,7 +116,7 @@
 
 .hotplug-resident-eject-button {
   padding: 7px;
-  border-radius: $base_radius;
+  border-radius: 0px;
   color: $text;
 }
 
@@ -140,7 +140,7 @@
 
 .system-menu-action {
   color: $text-secondary;
-  border-radius: $circular_radius; /* wish we could do 50% */
+  border-radius: 0px; /* wish we could do 50% */
   padding: $base_padding * 2;
   border: none;
   -st-icon-style: symbolic; // >= 3.29.90
@@ -199,7 +199,7 @@
     border: none;
     background-color: $osd;
     color: on($osd, secondary);
-    border-radius: $menu_radius;
+    border-radius: 0px;
   }
   .notification { margin-right: 16px; } //compensate for space allocated to the scrollbar
 }

@@ -24,7 +24,7 @@
     color: on($primary);
     background-color: $primary;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.25);
-    border-radius: $circular_radius;
+    border-radius: 0px;
     margin: 2px;
     padding: 0.2em 0.6em;
     font-weight: bold;
@@ -36,12 +36,12 @@
                          (left, right),
                          (right, left) {
     &.#{$_pos} #dash .dash-background {
-      border-radius: $dash_border_radius !important;
+      border-radius: 0px;
     }
 
     &.#{$_pos}.shrink {
       #dash .dash-background {
-        border-radius: $modal_radius + $base_margin !important;
+        border-radius: 0px;
       }
     }
 
@@ -57,7 +57,7 @@
         .dash-background {
           margin: 0 !important;
           margin-bottom: 0 !important;
-          border-radius: 0 !important;
+          border-radius: 0px;
         }
 
         .show-apps,
@@ -71,7 +71,7 @@
   &.extended,
   &.straight-corner {
     .dash-background {
-      border-radius: 0 !important;
+      border-radius: 0px;
     }
   }
 
@@ -368,13 +368,13 @@
     .overview-tile,
     .show-apps {
       .overview-icon {
-        border-radius: $base_radius;
+        border-radius: 0px;
       }
     }
   }
 
   .metro .overview-icon {
-    border-radius: 0;
+    border-radius: 0px;
   }
 }
 

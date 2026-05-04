@@ -10,16 +10,16 @@
 
   // radius is 2 pixel less to fit in bubble
   &:first-child {
-    border-radius: 0 0 0 $base_radius;
+    border-radius: 0px;
   }
 
   &:last-child {
     border-right-width: 0;
-    border-radius: 0 0 $base_radius 0;
+    border-radius: 0px;
   }
 
   &:first-child:last-child {
-    border-radius: 0 0 $base_radius $base_radius;
+    border-radius: 0px;
   }
 }
 

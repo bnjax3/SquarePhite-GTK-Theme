@@ -18,7 +18,7 @@ $app_folder_size: 720px;
 
 .overview-tile {
   color: on($osd, secondary);
-  border-radius: $base_radius * 2.5;
+  border-radius: 0px;
   padding: 6px;
   border: none;
   transition-duration: 100ms;
@@ -47,12 +47,12 @@ $app_folder_size: 720px;
 // App Folders
 .app-folder {
   background-color: on($osd, divider);
-  border-radius: $base_radius * 2.5;
+  border-radius: 0px;
   color: on($osd, secondary);
 
   .overview-icon {
     background-color: transparent;
-    border-radius: $base_radius * 2.5;
+    border-radius: 0px;
   }
 
   &:hover {
@@ -70,7 +70,7 @@ $app_folder_size: 720px;
 .app-grid-running-dot {
   width: $base_padding;
   height: 3px;
-  border-radius: 2px;
+  border-radius: 0px;
   background-color: on($osd, track);
   margin-bottom: 0;
 
@@ -93,7 +93,7 @@ $app_folder_size: 720px;
 .app-folder-dialog {
   width: $app_folder_size;
   height: $app_folder_size;
-  border-radius: $menu_radius * 3;
+  border-radius: 0px;
   padding: $base_padding * 2;
   box-shadow: none;
 
@@ -132,7 +132,7 @@ $app_folder_size: 720px;
       padding: 0;
       width: 36px;
       height: 36px;
-      border-radius: $circular_radius;
+      border-radius: 0px;
 
       > StIcon { icon-size: $base_icon_size; }
 
@@ -158,7 +158,7 @@ $app_folder_size: 720px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); // FIXME: this should really have a highlight
   background-color: $osd;
   color: on($osd);
-  border-radius: $circular_radius;
+  border-radius: 0px;
   icon-size: $app_icon_size * 0.5;
 }
 
@@ -173,7 +173,7 @@ $app_folder_size: 720px;
     background-gradient-start: rgba(255, 255, 255, 0.05);
     background-gradient-end: transparent;
     background-gradient-direction: horizontal;
-    border-radius: $modal_radius * 1.5 0px 0px $modal_radius * 1.5;
+    border-radius: 0px;
   }
 
   &.previous:ltr,
@@ -181,7 +181,7 @@ $app_folder_size: 720px;
     background-gradient-start: transparent;
     background-gradient-end: rgba(255, 255, 255, 0.05);
     background-gradient-direction: horizontal;
-    border-radius: 0px $modal_radius * 1.5 $modal_radius * 1.5 0px;
+    border-radius: 0px;
   }
 }
 
@@ -190,7 +190,7 @@ $app_folder_size: 720px;
   padding: $base_padding * 3;
   width: $medium_icon_size;
   height: $medium_icon_size;
-  border-radius: $circular_radius;
+  border-radius: 0px;
   transition-duration: 100ms;
   color: on($osd, secondary);
   background-color: transparent;

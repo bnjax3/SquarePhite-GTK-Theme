@@ -52,7 +52,7 @@
 .message {
   padding: $base_padding;
   margin: $base_spacing / 2;
-  border-radius: $window_radius;
+  border-radius: 0px;
 
   @if $colorful == 'true' {
     @include theme_bubble($theme_purple_color);
@@ -61,7 +61,7 @@
   .popup-menu & {
     @if $colorful == 'true' {
       @include theme_bubble($theme_purple_color);
-      border-radius: $base_radius;
+      border-radius: 0px;
     } @else {
       @extend %popover_bubble;
     }
@@ -140,7 +140,7 @@
     padding: $base_margin;
     height: $base_padding + 14px;
     width: $base_padding + 14px;
-    border-radius: $circular_radius;
+    border-radius: 0px;
 
     &, &:hover, &:active {
       @if $colorful == 'true' {
@@ -172,7 +172,7 @@
 .message-media-control {
   margin: $base_padding * 2.5 + 2px $base_padding;
   padding: $base_padding * 2;
-  border-radius: $circular_radius;
+  border-radius: 0px;
 
   @if $colorful == 'true' {
     color: on($theme_purple_color, secondary);
@@ -208,14 +208,14 @@
 // album-art
 .media-message-cover-icon {
   icon-size: $base_icon_size * 3 !important;
-  border-radius: $base_radius;
+  border-radius: 0px;
   margin: 0;
 
   &.fallback {
     icon-size: $base_icon_size * 1.5 !important;
     padding: $base_padding;
     border: none;
-    border-radius: $base_radius;
+    border-radius: 0px;
     background-color: $divider;
 
     @if $colorful == 'true' {

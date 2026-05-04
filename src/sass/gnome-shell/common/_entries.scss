@@ -4,7 +4,7 @@ StEntry, %entry {
   min-height: 20px;
   padding: $base_padding $base_padding * 2;
   margin: $base_margin / 2;
-  border-radius: $base_radius;
+  border-radius: 0px;
   selection-background-color: $primary;
   selected-color: on($primary);
 

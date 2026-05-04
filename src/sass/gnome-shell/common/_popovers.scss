@@ -2,7 +2,7 @@
 
 //.the popover itself
 .popup-menu-boxpointer {
-  -arrow-border-radius: $menu-radius;
+  -arrow-border-radius: 0px;
   -arrow-background-color: transparent;
   -arrow-border-width: 0;
   -arrow-border-color: transparent;
@@ -29,10 +29,10 @@
 
     @if $rimless == 'false' {
       border: 2px solid $primary;
-      border-radius: $menu_radius + 2px;
+      border-radius: 0px;
     } @else {
       border: none;
-      border-radius: $menu_radius;
+      border-radius: 0px;
     }
   }
 
@@ -41,7 +41,7 @@
     padding: $base_padding;
     color: $text-secondary !important;
     text-shadow: none;
-    border-radius: $base_radius;
+    border-radius: 0px;
     margin: 0;
     font-weight: normal;
 
@@ -51,7 +51,7 @@
       box-shadow: none;
       color: on($primary) !important;
       background-color: $primary !important;
-      border-radius: $base_radius $base_radius 0 0 !important;
+      border-radius: 0px;
 
       &:focus, &:hover, &.selected {
         color: on($primary) !important;
@@ -89,7 +89,7 @@
     border: none;
     box-shadow: none;
     margin: 0;
-    border-radius: 0 0 $base_radius $base_radius !important;
+    border-radius: 0px;
 
     @if $sidebar == 'styled' {
       background-color: $primary !important;
@@ -100,7 +100,7 @@
     }
 
     .popup-menu-item {
-      border-radius: 0;
+      border-radius: 0px;
       margin: 0;
       background-color: transparent !important;
 
@@ -123,7 +123,7 @@
 
     .popup-menu-section {
       &:last-child .popup-menu-item:last-child {
-        border-radius: 0 0 $base_radius $base_radius !important;
+        border-radius: 0px;
       }
     }
   }

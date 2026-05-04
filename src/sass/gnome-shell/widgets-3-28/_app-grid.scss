@@ -45,7 +45,7 @@ $app_icon_spacing: 6px;
   .page-indicator-icon {
     width: 12px;
     height: 12px;
-    border-radius: 12px;
+    border-radius: 0px;
     margin: 0;
     padding: 0;
     background-image: none;
@@ -117,17 +117,17 @@ $app_icon_spacing: 6px;
 
   &:first-child {
     border-right-width: 0;
-    border-radius: $menu_radius 0 0 $menu_radius;
+    border-radius: 0px;
   }
 
   &:last-child {
-    border-radius: 0 $menu_radius $menu_radius 0;
+    border-radius: 0px;
   }
 }
 
 // Collections
 .app-folder-popup { //expanded collection
-  -arrow-border-radius: $menu_radius * 2;
+  -arrow-border-radius: 0px;
   -arrow-background-color: on(black, divider);
   -arrow-base: 0;
   -arrow-rise: 12px;

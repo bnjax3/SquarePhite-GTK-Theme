@@ -1,6 +1,6 @@
 .quick-settings {
   padding: $base_padding * 3 !important;
-  border-radius: $base_radius + $base_padding * 3 !important;
+  border-radius: 0px;
   margin-top: 8px !important;
 
   .icon-button, .button {
@@ -18,7 +18,7 @@
 }
 
 .quick-toggle {
-  border-radius: $base_radius;
+  border-radius: 0px;
   min-width: if($compact == 'false', 12em, 11em) !important;
   max-width: if($compact == 'false', 12em, 11em) !important;
   min-height: 22px + $base_padding * 3 !important;
@@ -79,8 +79,8 @@
       background-color: $divider !important;
     }
 
-    &:ltr { border-radius: 0 $base_radius $base_radius 0; }
-    &:rtl { border-radius: $base_radius 0 0 $base_radius; }
+    &:ltr { border-radius: 0px; }
+    &:rtl { border-radius: 0px; }
   }
 }
 
@@ -93,7 +93,7 @@
     &:focus { @include button(focus); }
     min-height: 16px; // slider size
     padding: $base_padding;
-    border-radius: $circular_radius;
+    border-radius: 0px;
   }
 
   .quick-toggle-icon, .quick-toggle-arrow {
@@ -115,7 +115,7 @@
 }
 
 .quick-toggle-menu {
-  border-radius: $base_radius !important;
+  border-radius: 0px;
   padding: $base_padding * 2 !important;
   margin: $base_padding * 2 10px + $base_padding * 3 0 !important;
 
@@ -137,7 +137,7 @@
     min-height: 20px;
     padding: $base_padding;
     spacing: $base_padding;
-    border-radius: $base_radius !important;
+    border-radius: 0px;
 
     @if $sidebar == 'styled' {
       color: on($primary, secondary) !important;
@@ -175,7 +175,7 @@
 
     .icon {
       icon-size: $base_icon_size * 1.5; // a non-standard symbolic size but ok
-      border-radius: $base_radius;
+      border-radius: 0px;
       padding: 1.5 * $base_padding;
       background-color: on($popover, divider) !important;
 

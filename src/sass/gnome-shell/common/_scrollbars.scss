@@ -14,12 +14,12 @@ StScrollBar {
   }
 
   StBin#trough {
-    border-radius: $circular_radius;
+    border-radius: 0px;
     background-color: $divider;
   }
 
   StButton#vhandle, StButton#hhandle {
-    border-radius: $circular_radius;
+    border-radius: 0px;
     background-color: $text-secondary-disabled;
     border: 4px solid transparent; //would be nice to margin or at least to transparent
 
