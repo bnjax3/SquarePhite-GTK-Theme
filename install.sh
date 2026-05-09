@@ -1028,13 +1028,6 @@ else
     fi
   fi
 fi
-rm -r $HOME/.config/gtk-4.0
-cp -r $HOME/.themes/Graphite-Dark/gtk-4.0 $HOME/.config/gtk-4.0
-
-
-
-
-
 
 echo
 echo Done.
