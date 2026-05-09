@@ -715,7 +715,6 @@ datechooser {
     &.today:selected,
     &:selected:focus,
     &.today:selected:focus {
-      background-image: color($primary);
       color: on($primary);
       font-weight: bold;
 
